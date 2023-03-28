@@ -1,0 +1,51 @@
+/* Sticky footer CSS */
+html, /* Why both HTML & body? */
+body
+{
+    height: 100%; /* height of the browser window */
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+main
+{
+    flex-grow: 1; /* Let it take up as much space as it can*/
+    margin-top: 0.5rem;
+}
+
+footer
+{
+    flex-shrink: 0; /* do not let footer shrink below predeclared size*/
+}
+/* End Sticky footer CSS */
+
+.bgimage
+{
+    /* background-image: url(/img/GridBG.png); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/GridBG.png); /* rgba, a stands for alpha, is for transparency*/
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; /* bg image wont be repeated*/
+    background-attachment: fixed; /* bg image wont scroll */
+}
+
+/*  */
+
+.heroText
+{
+    font-family: 'Londrina Shadow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgb(195, 255, 0);
+}
+
+.minHeight
+{
+    min-height: 80vh; /* 80 % of viewport instead of 80% of containing element*/
+}
